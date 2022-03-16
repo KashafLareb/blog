@@ -47,7 +47,6 @@ class ArticlesController < ApplicationController
 
   private
     def article_params
-      byebug
       params.require(:article).permit(:title, :body, :status)
     end
 end
